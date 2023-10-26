@@ -1,0 +1,7 @@
+library(gapminder)
+library(dplyr)
+library(tidyverse)
+library(babynames)
+library(titanic)
+model_ti<-glm(Survived ~ Sex + Age + Pclass, family = "binomial",data = titanic_train)
+mean((plogis(predict(model_ti, newdata = titanic_train)) > 0.5) == titanic_train$Survived, na.rm = TRUE)
