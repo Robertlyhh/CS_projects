@@ -1,0 +1,13 @@
+﻿__pycache__/
+*.pyc
+*.pickle
+neat-checkpoint-*
+*.pth
+*.pt
+*.mar
+*.tar.gz
+*.zip
+cnnModel/data/
+pytorchModel/data/
+rubbber_duck_detection/logs/
+rubbber_duck_detection/model_store/
